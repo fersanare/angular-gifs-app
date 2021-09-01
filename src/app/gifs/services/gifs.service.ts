@@ -46,8 +46,12 @@ export class GifsService {
       this.resultados = resp.data;
       localStorage.setItem('resultados', JSON.stringify(this.resultados));
     });
-  
+  }
 
+  limpiarHistorial() {
+    localStorage.clear();
+    this.resultados = [];
+    this._historial = [];
   }
 
 }

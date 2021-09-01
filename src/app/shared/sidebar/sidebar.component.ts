@@ -18,4 +18,8 @@ export class SidebarComponent {
 
   }
 
+  public limpiarHistorial(){
+    this.gifsService.limpiarHistorial();
+  }
+
 }
